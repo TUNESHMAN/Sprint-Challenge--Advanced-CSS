@@ -1,7 +1,6 @@
 // Navigation code here
-.top{
-    background-color: #f4f4f4;;
-
+.top {
+  background-color: #f4f4f4;
 }
 h1 {
   display: flex;
@@ -12,6 +11,12 @@ h1 {
 nav {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 500px) {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+  }
 
   a {
     display: flex;
@@ -25,41 +30,34 @@ nav {
   }
 }
 
-nav a:hover{
-    background: red;
-    cursor: pointer;
-    color: @porcelain;
+nav a:hover {
+  background: red;
+  cursor: pointer;
+  color: @porcelain;
 }
 
 .btn {
-    .createButton(
-      1px solid @river-bend,
-      120px,
-      15px,
-      16px,
-      10px,
-      10px,
-      10px,
-      8px,
-      @btn-bg-color,
-      @sea-shell,
-      center,
-    );}
+  .createButton(
+    1px solid @river-bend,
+    120px,
+    15px,
+    16px,
+    10px,
+    10px,
+    10px,
+    8px,
+    @btn-bg-color,
+    @sea-shell,
+    center
+  );
+  @media (max-width: 500px) {
+    width: 400px;
+  }
+}
 
-
-    @media(max-width:500px){
-        nav{
-            display: flex;
-            justify-content: space-around;
-            font-size: 15px;
-        }
-    }
-
-    @media(max-width:500px){
-        .pics{
-            display: flex;
-            justify-content: space-around;
-        
-        }
-    }
-
+@media (max-width: 500px) {
+  .pics {
+    display: flex;
+    justify-content: space-around;
+  }
+}
