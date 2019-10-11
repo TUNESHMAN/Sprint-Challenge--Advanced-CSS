@@ -33,14 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive layouts borrow from the speed of a fixed layout but accommodate different devices at specific breakpoints in design. For example, an adaptive website may have hard coded pixels used for layout using media queries for different devices.
+
+Responsive layouts combine features of fixed, adaptive, and fluid websites together into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+
+Responsive sites take more time and effort to create and are the standard long term projects should aim for.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile or desktop first design of a website depends on traffic and business strategy. As a web developer, if we are building a desktop first website, we use max-width. However, if mobile first is the goal, we make use of min-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+It allows us to convert rem units by the power of 10.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing adds flavor to CSS. It makes it easier to write and use CSS. With preprocessors, we can write simplified CSS code.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I think i like the concept of variables and nesting. I can't say same about mixins.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
