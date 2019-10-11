@@ -271,7 +271,10 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
-    width: 100%;
+    width: 110%;
+    justify-content: center;
+    padding-left: 50px;
+    margin-right: -10px;
   }
 }
 .home .walk .walk-text {
@@ -282,6 +285,7 @@ footer {
     width: 100%;
     justify-content: center;
     flex-basis: 100%;
+    margin-left: -30px;
   }
 }
 .home .walk .walk-text h3 {
@@ -297,8 +301,10 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     min-width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     height: auto;
+    align-items: center;
+    margin-left: -30px;
   }
 }
 .home .walk .walk-img img {
