@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     width: 100%;
 
-    @media (max-width: 500px) {
+    @media (max-width: @mobile) {
       width: 100%;
       justify-content: space-around;
     }
@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 500px) {
+    @media (max-width: @mobile) {
       display: flex;
       flex-direction: column-reverse;
       width: 100%;
@@ -57,7 +57,7 @@
     .walk-text {
       width: 50%;
 
-      @media (max-width: 500px) {
+      @media (max-width: @mobile) {
         width: 100%;
         justify-content: center;
         flex-basis: 100%;
@@ -76,7 +76,7 @@
       width: 46%;
       margin-left: 4%;
 
-      @media (max-width: 500px) {
+      @media (max-width: @mobile) {
         min-width: 100%;
         justify-content: space-around;
         height: auto;
@@ -90,7 +90,7 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: @mobile) {
     .sky,
     .launch {
       display: none;
@@ -98,7 +98,7 @@
   }
 } // home
 
-@media (max-width: 500px) {
+@media (max-width: @mobile) {
   .blast {
     min-width: 80%;
     justify-content: space-around;
